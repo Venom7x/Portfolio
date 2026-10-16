@@ -53,7 +53,6 @@ export default function Navbar() {
           <span className="text-violet-soft">/&gt;</span>
         </a>
 
-        {/* Desktop nav */}
         <ul className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (
             <li key={item.id}>
@@ -93,7 +92,6 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setMenuOpen((v) => !v)}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
@@ -104,7 +102,6 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
