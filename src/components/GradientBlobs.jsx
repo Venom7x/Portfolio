@@ -1,8 +1,3 @@
-/**
- * Soft, slow-drifting gradient blobs used behind hero-style sections.
- * Purely decorative — hidden from assistive tech and disabled visually
- * (via the global reduced-motion rule in index.css) when requested.
- */
 export default function GradientBlobs({ className = "" }) {
   return (
     <div aria-hidden="true" className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`}>
