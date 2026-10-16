@@ -13,13 +13,13 @@ export default function Footer() {
             {profile.name}
             <span className="text-violet-soft">/&gt;</span>
           </p>
-          <p className="route-label mt-1 text-faint">200 OK · built with React</p>
+          <p className="route-label mt-1 text-faint">200 OK ·</p>
         </div>
 
         <SocialIcons />
 
         <p className="text-center text-sm text-muted md:text-right">
-          © {year} {profile.name}. Made with ❤️ using React.
+          © {year} {profile.name}.
         </p>
       </div>
     </footer>
