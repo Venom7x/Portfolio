@@ -13,12 +13,6 @@ const variants = {
 const MotionA = motion.create("a");
 const MotionButton = motion.create("button");
 
-/**
- * Polymorphic button: renders an <a> when `href` is provided, a
- * <button> by default, or any custom component (e.g. React Router's
- * `Link`) passed via `as`. No extra wrapper element, so width/layout
- * classes passed via `className` behave as expected.
- */
 export default function Button({
   as,
   href,
@@ -45,8 +39,6 @@ export default function Button({
     const tag = as ?? (href ? "a" : "button");
     MotionComponent = tag === "a" ? MotionA : MotionButton;
   } else {
-    // Custom component (e.g. react-router-dom's Link) — wrap once per
-    // render is fine here since Button instances are static per usage.
     MotionComponent = motion.create(as);
   }
 
