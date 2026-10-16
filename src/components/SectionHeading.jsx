@@ -5,12 +5,6 @@ const methodColor = {
   POST: "text-violet-soft",
 };
 
-/**
- * Every section opens with a small "request line" — method, path and
- * status — before the human-readable title. It's the throughline that
- * ties the whole site back to what Venom actually builds: documented,
- * predictable REST endpoints.
- */
 export default function SectionHeading({
   method = "GET",
   path,
