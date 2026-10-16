@@ -10,7 +10,6 @@ export default function TimelineItem({ item, isLast }) {
       transition={{ duration: 0.5 }}
       className="relative pl-10 sm:pl-14"
     >
-      {/* Rail */}
       {!isLast && (
         <span className="absolute left-[7px] top-6 h-full w-px bg-gradient-to-b from-cyan/50 to-transparent sm:left-[11px]" />
       )}
@@ -58,7 +57,6 @@ export default function TimelineItem({ item, isLast }) {
   );
 }
 
-// Best-effort icon lookup for free-form tech tags used in experience data.
 const techToIcon = {
   React: "FaReact",
   "Spring Boot": "SiSpringboot",
