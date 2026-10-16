@@ -12,18 +12,12 @@ const orbitIcons = [
 
 const codeLines = [60, 85, 40, 70, 50, 30];
 
-/**
- * An abstract "workstation" in place of a personal photo: a glass
- * code window at the center with animated lines, orbited by the
- * technologies Venom actually builds with. Entirely hand-built SVG
- * and CSS/Framer Motion — no external image assets.
- */
 export default function DevIllustration() {
   const prefersReducedMotion = useReducedMotion();
 
   return (
     <div className="relative mx-auto flex h-[340px] w-full max-w-[420px] items-center justify-center sm:h-[420px]">
-      {/* Orbit rings + icons */}
+      {}
       {orbitIcons.map(({ Icon, color, size, duration, delay, reverse }, i) => (
         <div
           key={i}
@@ -49,7 +43,7 @@ export default function DevIllustration() {
         </div>
       ))}
 
-      {/* Central code window */}
+      {}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -87,7 +81,7 @@ export default function DevIllustration() {
         />
       </motion.div>
 
-      {/* Ambient glow */}
+      {}
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 rounded-full bg-gradient-to-br from-cyan/10 to-violet/10 blur-3xl"
