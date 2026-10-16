@@ -1,11 +1,6 @@
 import { FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
 import TiltCard from "./TiltCard";
 
-/**
- * Projects use a hand-drawn abstract "browser window" preview instead
- * of a screenshot placeholder — swap the <ProjectPreview> markup for a
- * real <img> once you have screenshots.
- */
 function ProjectPreview({ name, accent }) {
   const [from, to] = accent;
   const initials = name
