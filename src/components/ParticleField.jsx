@@ -1,12 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useReducedMotion } from "framer-motion";
 
-/**
- * Lightweight hand-rolled canvas particle field — deliberately not a
- * third-party particle library, since this is the only bit of motion
- * that needs per-frame control. Particles drift gently and nudge away
- * from the cursor. Skips entirely when reduced motion is preferred.
- */
 export default function ParticleField({ density = 46, className = "" }) {
   const canvasRef = useRef(null);
   const prefersReducedMotion = useReducedMotion();
