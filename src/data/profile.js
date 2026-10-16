@@ -11,7 +11,7 @@ export const profile = {
   bio: "I am a Full Stack Developer specializing in React, Spring Boot, and MySQL. I enjoy building scalable, clean, and responsive web applications with modern technologies. I focus on creating fast, user-friendly, and secure applications while continuously learning new technologies and solving complex problems.",
   location: "India",
   status: "Available for work",
-  resumeUrl: "/resume.pdf", 
+  resumeUrl: "/Resume.pdf", 
   email: "[email protected]", 
 };
 
