@@ -24,8 +24,6 @@ import {
 import { TbApi } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 
-// Central registry so skill/tech data can reference icons by string name
-// (keeps data files framework-agnostic and easy to edit).
 const registry = {
   FaReact,
   FaHtml5,
