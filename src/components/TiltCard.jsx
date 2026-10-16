@@ -1,9 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform, useReducedMotion } from "framer-motion";
 
-/**
- * Wraps children in a card that tilts slightly toward the cursor.
- * Falls back to a static card when reduced motion is preferred.
- */
 export default function TiltCard({ children, className = "" }) {
   const prefersReducedMotion = useReducedMotion();
   const x = useMotionValue(0.5);
