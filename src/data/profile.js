@@ -1,4 +1,3 @@
-// Central place for personal info. Replace placeholder values with your own.
 export const profile = {
   name: "Venom",
   title: "Full Stack Developer",
@@ -12,15 +11,15 @@ export const profile = {
   bio: "I am a Full Stack Developer specializing in React, Spring Boot, and MySQL. I enjoy building scalable, clean, and responsive web applications with modern technologies. I focus on creating fast, user-friendly, and secure applications while continuously learning new technologies and solving complex problems.",
   location: "India",
   status: "Available for work",
-  resumeUrl: "/resume.pdf", // Drop your real resume into /public as resume.pdf
-  email: "[email protected]", // TODO: replace with your real email
+  resumeUrl: "/resume.pdf", 
+  email: "[email protected]", 
 };
 
 export const socials = {
   github: "https://github.com/Venom7x",
   leetcode: "https://leetcode.com/u/Escanor7DS/",
-  linkedin: "https://linkedin.com/in/venom-dev", // TODO: replace with your real LinkedIn
-  email: "mailto:[email protected]", // TODO: replace with your real email
+  linkedin: "https://linkedin.com/in/devendra7x",
+  email: "mailto:[mohit123barman@gmail.com]", 
 };
 
 export const highlights = [
