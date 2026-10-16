@@ -37,7 +37,6 @@ export default function LeetCodeCard({ status, data }) {
           <p className="route-label text-faint">@{LEETCODE_USERNAME}</p>
         </div>
 
-        {/* Small ambient coding glyph */}
         <motion.span
           aria-hidden="true"
           animate={prefersReducedMotion ? undefined : { rotate: [0, 8, -8, 0] }}
@@ -89,10 +88,6 @@ export default function LeetCodeCard({ status, data }) {
           )}
         </>
       )}
-
-      {/* Contest card — the public API this site queries doesn't expose
-          contest rating, so this stays an honest call-to-action rather
-          than a fabricated number. */}
       <div className="mt-5 glass flex items-center gap-3 rounded-xl p-4">
         <FaTrophy aria-hidden="true" className="text-lg text-yellow-400/80" />
         <div className="flex-1">
