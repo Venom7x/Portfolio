@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring, useReducedMotion } from "framer-motion";
 
-/**
- * A small dot + trailing ring that follows the pointer. Only mounts on
- * devices with a fine pointer (mouse/trackpad) — never on touch — and
- * bows out entirely when reduced motion is preferred.
- */
 export default function CustomCursor() {
   const prefersReducedMotion = useReducedMotion();
   const [enabled, setEnabled] = useState(false);
