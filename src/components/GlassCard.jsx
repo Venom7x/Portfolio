@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
 
-/**
- * Generic glassmorphism panel. Pass `hover` to lift slightly on
- * hover/focus — used for interactive cards, omit for static panels.
- */
 export default function GlassCard({
   as: Tag = "div",
   hover = false,
